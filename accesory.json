@@ -1,0 +1,146 @@
+{
+  "rig0": {
+    "AccessoryPairingID": "FF:EF:43:D4:53:DD",
+    "AccessoryLTPK": "a9325ec8491b25ff9c435cde81b1375d60d6d83dac28906cd9c2b0290593182c",
+    "iOSPairingId": "0f584d16-f58c-4f17-8f34-4fb94678775a",
+    "iOSDeviceLTSK": "9dd0adc3003b251aded10678bd1706cc1991e579ed35be04368ebba484875bda",
+    "iOSDeviceLTPK": "e6e23188173edddacc01e9b4df4cc05743889a72c59cc6bcd6d851a588fffd83",
+    "AccessoryIP": "192.168.1.59",
+    "AccessoryPort": 5556,
+    "Connection": "IP",
+    "accessories": [
+      {
+        "aid": 1,
+        "services": [
+          {
+            "iid": 1,
+            "type": "0000003E-0000-1000-8000-0026BB765291",
+            "hidden": false,
+            "primary": false,
+            "characteristics": [
+              {
+                "aid": 1,
+                "iid": 2,
+                "type": "00000023-0000-1000-8000-0026BB765291",
+                "perms": [
+                  "pr"
+                ],
+                "description": "Name",
+                "format": "string",
+                "value": "Sonoff-957A15"
+              },
+              {
+                "aid": 1,
+                "iid": 3,
+                "type": "00000020-0000-1000-8000-0026BB765291",
+                "perms": [
+                  "pr"
+                ],
+                "description": "Manufacturer",
+                "format": "string",
+                "value": "\u4e50\u6e05\u667a\u80fd\u751f\u6d3b\u9986"
+              },
+              {
+                "aid": 1,
+                "iid": 4,
+                "type": "00000030-0000-1000-8000-0026BB765291",
+                "perms": [
+                  "pr"
+                ],
+                "description": "Serial Number",
+                "format": "string",
+                "value": "957A15-1"
+              },
+              {
+                "aid": 1,
+                "iid": 5,
+                "type": "00000021-0000-1000-8000-0026BB765291",
+                "perms": [
+                  "pr"
+                ],
+                "description": "Model",
+                "format": "string",
+                "value": "Sonoff Devices"
+              },
+              {
+                "aid": 1,
+                "iid": 6,
+                "type": "00000052-0000-1000-8000-0026BB765291",
+                "perms": [
+                  "pr"
+                ],
+                "description": "Firmware Revision",
+                "format": "string",
+                "value": "1.0.0"
+              },
+              {
+                "aid": 1,
+                "iid": 7,
+                "type": "00000014-0000-1000-8000-0026BB765291",
+                "perms": [
+                  "pw"
+                ],
+                "description": "Identify",
+                "format": "bool"
+              }
+            ]
+          },
+          {
+            "iid": 8,
+            "type": "00000047-0000-1000-8000-0026BB765291",
+            "hidden": false,
+            "primary": true,
+            "characteristics": [
+              {
+                "aid": 1,
+                "iid": 9,
+                "type": "00000025-0000-1000-8000-0026BB765291",
+                "perms": [
+                  "pr",
+                  "pw",
+                  "ev"
+                ],
+                "ev": false,
+                "description": "On",
+                "format": "bool",
+                "value": false
+              },
+              {
+                "aid": 1,
+                "iid": 10,
+                "type": "00000026-0000-1000-8000-0026BB765291",
+                "perms": [
+                  "pr",
+                  "ev"
+                ],
+                "ev": false,
+                "description": "Outlet In Use",
+                "format": "bool",
+                "value": true
+              }
+            ]
+          },
+          {
+            "iid": 100,
+            "type": "000000A2-0000-1000-8000-0026BB765291",
+            "hidden": false,
+            "primary": false,
+            "characteristics": [
+              {
+                "aid": 1,
+                "iid": 101,
+                "type": "00000037-0000-1000-8000-0026BB765291",
+                "perms": [
+                  "pr"
+                ],
+                "description": "Version",
+                "format": "string",
+                "value": "1.1.0"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

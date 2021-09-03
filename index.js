@@ -3,7 +3,7 @@ const moment = require('moment');
 const https = require('https');
 
 const instance = axios.create({
-    timeout: 60 * 1000,
+    timeout: 30 * 1000,
     httpsAgent: new https.Agent({  
       rejectUnauthorized: false
     })
@@ -15,7 +15,7 @@ setInterval(() => {
         console.log('offline');
         reboot(10);
     });
-}, 60 * 1000);
+}, 30 * 1000);
 
 let lastRebootTime = moment().add(-5, 'minutes');
 let claimDownMinutes = 5;

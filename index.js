@@ -16,8 +16,8 @@ setInterval(() => {
         errCount = 0;
         console.log('online');
     }).catch((err) => {
-        console.log('offline');
         errCount++
+        console.log('offline errCount = ', errCount);
         if (errCount > errorCountThreshold) {
             reboot(10);
             errCount = 0;

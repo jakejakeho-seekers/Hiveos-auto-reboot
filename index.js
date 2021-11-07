@@ -8,14 +8,22 @@ const instance = axios.create({
       rejectUnauthorized: false
     })
   });
+
+const errorCountThreshold = 3;
+let errCount = 0
 setInterval(() => {
     instance('https://192.168.1.15:4200/').then((result) => {
+        errCount = 0;
         console.log('online');
     }).catch((err) => {
         console.log('offline');
-        reboot(10);
+        errCount++
+        if (errCount > errorCountThreshold) {
+            reboot(10);
+            errCount = 0;
+        }
     });
-}, 30 * 1000);
+}, 10 * 1000);
 
 let lastRebootTime = moment().add(-5, 'minutes');
 let claimDownMinutes = 5;
